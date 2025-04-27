@@ -83,17 +83,11 @@
   </header>
 
   <nav>
-    <a href="#projects">Projects</a>
     <a href="#about">About</a>
+    <a href="#projects">Projects</a>
     <a href="#updates">Updates</a>
     <a href="#contact">Contact</a>
   </nav>
-
-  <section id="projects">
-    <h2>🚀 Projects</h2>
-    <p><strong>Mimic Robot</strong> (Work in Progress) — Building a robot that sees, talks, and interacts with its environment.<br><br>
-    <strong>Other Experiments</strong> — From robotics to AI tests. Always learning and building.</p>
-  </section>
 
   <section id="about">
     <h2>👨‍💻 About Me</h2>
@@ -102,6 +96,12 @@
     Winner of two local Scratch competitions (not flexing, just proud 😅).<br>
     Currently focusing on my studies while working on crazy tech projects in the background.<br>
     Follow my journey on Instagram, TikTok, YouTube, and sometimes Twitch.</p>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <p><strong>Mimic Robot</strong> (Work in Progress) — Building a robot that sees, talks, and interacts with its environment.<br><br>
+    <strong>Other Experiments</strong> — From robotics to AI tests. Always learning and building.</p>
   </section>
 
   <section id="updates">
@@ -135,33 +135,7 @@
     sections.forEach(sec => observer.observe(sec));
 
     // Automatic language detection & translation
-    const translations = { /* same translations object as before */
+    const translations = {
       en: { headerTitle:"Fares Ferjani", headerSubtitle:"Robotics Developer and AI enthusiast from Kebili, Tunisia", navProjects:"Projects", navAbout:"About Me", navUpdates:"Updates", navContact:"Contact", projectsTitle:"🚀 Projects", projectsDesc:`<strong>Mimic Robot</strong> (Work in Progress) — A project to build a robot that sees, talks, and interacts with its environment.<br><br><strong>Other Experiments</strong> — From robotics to small AI tests. Always learning and building.`, aboutTitle:"👨‍💻 About Me", aboutDesc:`I'm Fares Ferjani, a 16-year-old student at <strong>معهد الامتياز</strong>.<br>Passionate about robotics, AI, and coding.<br>Winner of two local Scratch competitions (not flexing, just proud 😅).<br>Currently focusing on my studies while working on crazy tech projects in the background.<br>You can follow my journey on Instagram, TikTok, YouTube, and sometimes Twitch.`, updatesTitle:"📝 Updates", updatesDesc:"Follow all updates related to the Mimic robot project, AI experiments, prototypes, and crazy ideas I'm trying to make real.", contactTitle:"📬 Contact Me", contactDesc:`Wanna collab, chat, or follow my journey?<br><br>Instagram: <a href="#" style="color:var(--accent);">@your_instagram</a><br>TikTok: <a href="#" style="color:var(--accent);">@your_tiktok</a><br>YouTube: <a href="#" style="color:var(--accent);">Your Channel</a><br>Twitch: <a href="#" style="color:var(--accent);">Your Twitch</a>`, footer:"&copy; 2025 Fares Ferjani. Designed and developed by Fares Ferjani." },
       fr: { headerTitle:"Fares Ferjani", headerSubtitle:"Développeur en robotique et passionné d'IA de Kébili, Tunisie", navProjects:"Projets", navAbout:"À propos", navUpdates:"Mises à jour", navContact:"Contact", projectsTitle:"🚀 Projets", projectsDesc:`<strong>Robot Mimic</strong> (En cours) — Projet pour construire un robot qui voit, parle et interagit avec son environnement.<br><br><strong>Autres projets & expériences</strong> — De la robotique aux petits tests d'IA. Toujours en train d'apprendre et de créer.`, aboutTitle:"👨‍💻 À propos de moi", aboutDesc:`Je suis Fares Ferjani, étudiant de 16 ans à <strong>معهد الامتياز</strong>.<br>Passionné par la robotique, l'IA et la programmation.<br>Gagnant de deux compétitions locales Scratch (pas pour me vanter 😅).<br>Actuellement concentré sur mes études tout en développant des projets de folie en arrière-plan.<br>Vous pouvez suivre mes progrès sur Instagram, TikTok, YouTube, et parfois sur Twitch.`, updatesTitle:"📝 Mises à jour", updatesDesc:"Suivez toutes les mises à jour du projet Mimic, les expériences en IA, les prototypes et les idées folles que je tente de réaliser.", contactTitle:"📬 Contact", contactDesc:`Envie de collaborer, discuter, ou suivre mon aventure ?<br><br>Instagram : <a href="#" style="color:var(--accent);">@your_instagram</a><br>TikTok : <a href="#" style="color:var(--accent);">@your_tiktok</a><br>YouTube : <a href="#" style="color:var(--accent);">Votre chaîne</a><br>Twitch : <a href="#" style="color:var(--accent);">Votre chaîne Twitch</a>`, footer:"&copy; 2025 Fares Ferjani. Créé et conçu par Fares Ferjani." },
-      ar: { headerTitle:"فارس الفرجاني", headerSubtitle:"مطوّر روبوتات ومهتم بالذكاء الاصطناعي من قبلي، تونس", navProjects:"مشاريعي", navAbout:"عنّي", navUpdates:"آخر الأخبار", navContact:"اتصال", projectsTitle:"🚀 مشاريعي", projectsDesc:`<strong>روبوت ميميك</strong> (قيد العمل) — مشروع لبناء روبوت يرى، يتحدث، ويتفاعل مع بيئته.<br><br><strong>تجارب وأعمال أخرى</strong> — من الروبوتات إلى اختبارات الذكاء الاصطناعي الصغيرة. دائم التعلم والبناء.`, aboutTitle:"👨‍💻 عنّي", aboutDesc:`أنا فارس الفرجاني، طالب في <strong>معهد الامتياز</strong>.<br>شغوف بالروبوتات والذكاء الاصطناعي والبرمجة.<br>فزت بمسابقتين محليتين للسكراتش (مو تكبر، بس فخور 😅).<br>أركّز حاليًا على دراستي مع العمل على مشاريع تقنية مجنونة خلف الكواليس.<br>تقدر تتابع تقدمي على إنستغرام، تيك توك، يوتيوب، وأحياناً على تويتش.`, updatesTitle:"📝 آخر الأخبار", updatesDesc:"تابع كل التحديثات المتعلقة بروبوت ميميك، تجاربي في الذكاء الاصطناعي، النماذج الأولية، والأفكار المجنونة التي أحاول تنفيذها.", contactTitle:"📬 تواصل معي", contactDesc:`حابب نتعاون، نتعرف أو تتابع الرحلة؟<br><br>إنستغرام: <a href="#" style="color:var(--accent);">@your_instagram</a><br>تيك توك: <a href="#" style="color:var(--accent);">@your_tiktok</a><br>يوتيوب: <a href="#" style="color:var(--accent);">قناتك على يوتيوب</a><br>تويتش: <a href="#" style="color:var(--accent);">قناتك على تويتش</a>`, footer:"&copy; 2025 فارس الفرجاني. صُمم وبرمج بواسطة فارس الفرجاني." }
-    };
-
-    // Apply translations
-    function updateContent(lang) {
-      const t = translations[lang] || translations.en;
-      document.querySelector("header h1").textContent = t.headerTitle;
-      document.querySelector("header p").textContent = t.headerSubtitle;
-      document.querySelector('nav a[href="#projects"]').textContent = t.navProjects;
-      document.querySelector('nav a[href="#about"]').textContent = t.navAbout;
-      document.querySelector('nav a[href="#updates"]').textContent = t.navUpdates;
-      document.querySelector('nav a[href="#contact"]').textContent = t.navContact;
-      document.querySelector("#projects h2").textContent = t.projectsTitle;
-      document.querySelector("#projects p").innerHTML = t.projectsDesc;
-      document.querySelector("#about h2").textContent = t.aboutTitle;
-      document.querySelector("#about p").innerHTML = t.aboutDesc;
-      document.querySelector("#updates h2").textContent = t.updatesTitle;
-      document.querySelector("#updates p").textContent = t.updatesDesc;
-      document.querySelector("#contact h2").textContent = t.contactTitle;
-      document.querySelector("#contact p").innerHTML = t.contactDesc;
-      document.querySelector("footer").innerHTML = t.footer;
-    }
-
-    // Detect and set language automatically
-    const browserLang = (navigator.language || navigator.userLanguage).slice(0, 2);
-    updateContent(browserLang);
-  </script>
+      ar: { headerTitle:"فارس الفرجاني", headerSubtitle:"مطوّر روبوتات ومهتم بالذكاء الاصطناعي من قبلي، تونس", navProjects:"مشاريعي", navAbout:"عنّي", navUpdates:"آخر الأخبار", navContact:"اتصال", projectsTitle:"🚀 مشاريعي", projectsDesc:`<strong>روبوت ميميك</strong> (قيد العمل) — مشروع لبناء روبوت يرى، يتحدث، ويتفاعل مع بيئته.<br><br><strong>تجارب وأعمال أخرى</strong> — من الروبوتات إلى اختبارات الذكاء الاصطناعي الصغيرة. دائم التعلم والبناء.`, aboutTitle:"👨‍💻 عنّي", aboutDesc:`أنا فارس الفرجاني، طالب في <strong>معهد الامتياز</strong>.<br>شغوف بالروبوتات والذكاء الاصطناعي والبرمجة.<br>فزت بمسابقتين محليتين للسكراتч (مو تكبر، بس فخور 😅).<br>أركّز socda 문```
